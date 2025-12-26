@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucky Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Lucky Predictor</h1>
+        
+        <!-- Section code d'accès -->
+        <div id="access-section">
+            <p>🔐 Entrez votre code d'accès :</p>
+            <input type="text" id="access-code" placeholder="Code">
+            <button onclick="verifyCode()">Valider</button>
+            <p id="access-message"></p>
+        </div>
+
+        <!-- Section prédiction -->
+        <div id="prediction-section" style="display:none;">
+            <p>📊 Appuie sur le bouton pour recevoir une prédiction :</p>
+            <button onclick="generatePrediction()">Nouvelle prédiction</button>
+            <p id="prediction-result"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
